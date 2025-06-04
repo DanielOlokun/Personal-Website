@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">My Skills</a>
+      <a href="#contact">Contact Me</a>
+  </nav>
+  
+    <header>
+      <h1>
+        <img src="image.png" alt="picture" class="zoom-image" width="200" height="200" style="margin-top: 100px;">
+        <p> Hello, <br> My name is Daniel Olokun.</p>
+      </h1>
+    </header>
+    <p>A Computer Science Student studying at DCU with an interest in all things technology, developing <br>
+    and competitive programming ! </p>
+    <h2 id="about">About Me</h2>
+        <p>I am a Computer Science Student currently studying at Dublin City University. <br>
+          I will be graduating in 2027. <br>
+        I enjoy creating and devloping sites and apps. </p>
+
+    <section class="skills-section">
+    <h2 id="skills">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">C</div>
+      <div class="skill-box">Java</div>
+      <div class="skill-box">Python</div>
+      <div class="skill-box">React</div>
+      <div class="skill-box">Django</div>
+      <div class="skill-box">Linux Shell Scripting</div>
+      <div class="skill-box">Full Stack Development</div>
+
+    </section>
+  
+<section id="contact" style="padding: 40px; max-width: 500px; margin: auto;">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/danielolokun30@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+
+    <!-- Prevent spam and allow redirections -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <button type="submit" style="padding: 10px; background-color: black; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      Send Message
+    </button>
+  </form>
+</section>
+
+
+
+    <div style="height:2000px;">
+    </div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/danielolokun_/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href ="https://www.linkedin.com/in/daniel-olokun-7002b8245/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <a href ="https://www.tiktok.com/@danielolokun_1" target="_blank">
+        <ion-icon name="logo-tiktok"></ion-icon>
+      </a>
+      <a href = "https://github.com/DanielOlokun" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+    </div>
+    </div>
+  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

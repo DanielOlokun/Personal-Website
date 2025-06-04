@@ -1,0 +1,99 @@
+/*  style.css */
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+body {
+    text-align: center;
+    background-color:antiquewhite;
+}
+
+.zoom-image:hover {
+    transform: scale(1.2); /* Enlarge the image by 20% */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    padding: 10px 0;
+    text-align: right;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none; /* optional styling */
+  }
+
+  nav a:last-child {
+    margin-right: 0; /* prevent extra space after last link */
+  }
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left; /* Centers icons horizontally */
+    align-items: center;    /* Aligns icons vertically */
+    padding: 10px;
+    position: fixed; /* Sticks to the top of the page */
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.social-icons a {
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+.social-icons {
+    width: 20px; /* Adjust size as needed */
+    height: 30px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Adds hover effect */
+}
+  
+.social-icons a:hover {
+    transform: scale(1.4); /* Enlarges icon on hover */
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.skills-section {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.05);
+  }
